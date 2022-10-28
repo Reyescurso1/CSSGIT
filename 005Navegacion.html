@@ -1,33 +1,64 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+  <head>
     <title>Trabajamos con Git</title>
-        <style>
-            ul {
-                list-style-type: none;
-                padding: 0px;
-                margin:0px;
-                width: 100px;
-            }
-            li a {
-                color: wheat;
-                background-color: rgb(148, 64, 64);
-                display: block;
-                text-decoration: none;
-                padding: 20px;
+    <style>
+      /* aplico estilo a los enlaces y colores */
+      ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        width: 150px;
+      }
+      li {
+        border: 2lpx solid black;
+        border-radius: 10px 10px 10px;
+      }
+      li a {
+        border: 1px solid rgb(64, 148, 71);
+        color: wheat;
+        background-color: rgb(64, 148, 102);
+        display: block;
+        text-decoration: none;
+        padding: 30px;
+      }
+      li a:hover {
+        background: #ce5937;
+        background: -moz-linear-gradient(
+          left,
+          #ce5937 0%,
+          #1c6ea4 50%,
+          #c59237 100%
+        );
+        background: -webkit-linear-gradient(
+          left,
+          #ce5937 0%,
+          #1c6ea4 50%,
+          #c59237 100%
+        );
+        background: linear-gradient(
+          to right,
+          #ce5937 0%,
+          #1c6ea4 50%,
+          #c59237 100%
+        );
+        color: black;
+      }
 
-            }
-
-
-        </style>
-
-    </head>
-    <body>
-        <ul>
-            <li><a href="http://elpais.es">elpais</a></li> 
-            <li><a href="http://elmundo.es">elmundo</a></li> 
-            <li><a href="http://lavanguardia.es">lavanguardia></a></li>
-            <li><a href="http://elcorreo.es">elcorreo</a></li>
-        </ul>
-        
-    </body>
+      #primero a {
+        border-radius: 10px 10px 0px 0px;
+      }
+      #ultimo a {
+        border-radius: 0px 0px 10px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li id="primero"><a href="http://elpais.es">El pais</a></li>
+      <li><a href="http://elmundo.es">El mundo</a></li>
+      <li><a href="http://lavanguardia.es">La vanguardia</a></li>
+      <li id="ultimo"><a href="http://elcorreo.es">El correo</a></li>
+    </ul>
+  </body>
 </html>

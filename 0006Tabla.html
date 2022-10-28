@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    
+  <head>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table,td,tr {
+            border: 1px solid black;
+
+        } 
+        td {
+            text-align:center ;
+        }
+        /*alterna color los pares e impares*/
+        tbody tr:nth-child(odd) {
+            background-color:  rgb(99, 99, 179); 
+            color:white
+        } 
+
+        tbody tr:nth-child(even) {
+            background-color:  rgb(179, 99, 155); 
+            color:white
+        }
+
+
+
+
+        tbody {
+            background-color: rgb(0, 68, 255);
+            color: white
+        }
+    </style>
+  </head> 
+    <body>
+        
+        <!--Tabla con estilo-->
+        <table>
+            <caption>
+                Mi tabla
+            </caption>
+            
+            <thead>
+               <tr>
+                <th>Empresa</th> 
+                <th>Facturas</th> 
+                <th>Importe</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Empresa A</td> 
+                <td>Factura 1</td>                
+                <td>200,50</td>
+            </tr> 
+            <tr>
+                <td>Empresa B</td> 
+                <td>Factura 1</td> 
+                <td>200,50</td>
+            </tr> 
+            <tr>
+                <td>Empresa C</td> 
+                <td>Factura 1</td> 
+                <td>200,50</td> 
+             </tr>
+
+            <tr class="par">
+                    <td>Empresa B</td> 
+                    <td>Factura 1</td> 
+                    <td>200,50</td>
+            </tr>
+
+           </tbody>
+           <tfoot>
+           <tr> 
+                
+                <td colspan="2">Sumatorio</td> 
+                <td>500</td>
+
+           </tr>
+        </tfoot>
+            </table>
+            
+        </table>
+    </body>
+    
+    
+  
+
+
