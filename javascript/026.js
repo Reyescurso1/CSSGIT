@@ -15,4 +15,4 @@ for(var i=0;i<=10;i=i+1) {
 
 
 
-//Representa un Bucle en un texto los numeros consecutivos con parentesis
+//Representa un Bucle en un texto de numeros consecutivos con parentesis
