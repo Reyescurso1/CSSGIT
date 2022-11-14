@@ -1,0 +1,7 @@
+Factura1.txt El gato con rabo
+Factura2.txt El gato con rabo
+factura3.txt El gato con rabo
+factura4.doc El gato con rabo
+factura5.doc El gato con rabo
+
+[fF]actura...
