@@ -1,0 +1,29 @@
+EJEMPLO
+
+
+entregamos la compra a 10142812E
+entregamos la compra a 20142812L
+entregamos la compra a 10142812Z
+entregamos la compra a 10142812-C
+entregamos la compra a 10142812P
+
+\d{7,8}-?[A-Z]\
+
+
+OTRO EJEMPLO
+
+sube pan.txt?01
+sube otro.txt?02
+sube este.doc?03
+
+
+[a-z]{2,6}\.[a-z]{3}\?\d{2}
+
+#[a-z0-9]{6};
+
+ 
+Ejemplo de paleta de color en html
+
+
+
+
