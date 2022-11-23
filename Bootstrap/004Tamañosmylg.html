@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .miestilo {
+        background-color: rgb(29, 233, 168);
+        border: 1px solid black;
+        text-align: center;
+      }
+    </style>
+    <style>
+      .miestilo2 {
+        background-color: rgb(233, 29, 124);
+        border: 1px solid black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p>xs=extra small menos de 768px </p>
+    <p>sm>= small mas de 768px </p>
+    <p>md=medium menos de 992</p>
+    <p>lg= large mas de 1200 </p>
+   
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-5 col-sm-10  miestilo">
+          Soy 1 y grande
+        </div>
+        <div class="col-lg-9 col-md-7 col-sm-2 d-none d-sm-block miestilo">
+          Soy 2 y pequeño
+      </div>
+    </div>
+  </body>
+</html>
