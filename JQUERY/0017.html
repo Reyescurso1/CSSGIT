@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <style>
+    .gastoalto {
+      backgroud-color: rgb(208, 55, 55);
+      color: blue;
+  
+    }
+    </style>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+       $("tr td:last-child").each(function() {
+        var importe=parseInt($(this).text());
+        if (importe>100) {
+          $(this).addClass("gastoalto");
+
+        }
+       })
+ 
+      });
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Numero</th> 
+        <th>Concepto</th> 
+        <th>Importe</th> 
+      </tr>
+      <tr>
+        <td>1</td> 
+        <td>Camisa</td> 
+        <td>50</td> 
+      </tr>
+      <tr>
+        <td>2</td> 
+        <td>Pantalon</td> 
+        <td>500</td> 
+      </tr> 
+      <tr>
+        <td>3</td> 
+        <td>Vestido</td> 
+        <td>150</td> 
+      </tr>
+
+      
+    </table>
+    
+    
+  </body>
+</html>

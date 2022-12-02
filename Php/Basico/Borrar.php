@@ -5,12 +5,12 @@ $clave="";
 $basedatos="curso2";
 
 
-    $sql="delete from Facturas where numero=".$_GET["numero"];
+    $sql="delete from Facturas where numero=".$_GET["dni"];
   
 $conn= mysqli_connect($servidor,$usuario,$clave,$basedatos);
 if(mysqli_query($conn,($sql))) {
     
-    header ('location:TablaFactura.php');
+   // header ('location:TablaFactura.php');
 } else {
     echo "ha dado error".mysqli_error($conn);
 
