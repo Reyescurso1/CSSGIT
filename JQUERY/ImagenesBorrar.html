@@ -2,7 +2,13 @@
 <html lang="en">
   <head>
     <style>
-      
+      img {
+        opacity: 50%;
+      }
+      .iluminar {
+        opacity: 100%
+      } 
+    
     </style>
 
     <script
@@ -12,15 +18,18 @@
     ></script>
 
     <script type="text/javascript">
-     $(document).ready(function () {
-      $("img").click(function () {
-      $(this).fadeOut(3000,function() {
-          
-            $(this).remove();
-          
-        });
-      });
+     $(document).ready(function(){
+
+      $("img").hover(function() {
+        $(this).addClass("iluminar");
+      
+      },function() {
+        $(this).removeClass("iluminar");
+
+      
+      
     });
+   });
       
     </script>
   </head>

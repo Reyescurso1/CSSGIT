@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nombre").keyup(function () {
+          if ($(this).val() != "") {
+            $("#errorNombre").css("display", "none");
+          } else {
+            $("#errorNombre").css("display", "inline");
+          }
+        });
+      });
+
+      function validar() {
+        return validarNombre() && validarApellido();
+      }
+
+      function validarNombre() {
+        if ($("#nombre").val() == "") {
+          //alert("nombre vacio");
+          $("#errorNombre").css("display", "inline");
+          return false;
+        } else {
+          return true;
+        }
+      }
+      function validarApellido() {
+        if ($("#apellido").val() == "") {
+          //alert("apellido vacio");
+          $("#errorApellido").css("display", "inline");
+          return false;
+        } else {
+          return true;
+        }
+      }
+    </script>
+    <style>
+      .error {
+        color: red;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form onsubmit="return validar()" action="destino.php">
+      <p>
+        <label for="nombre">nombre</label>
+        <input type="text" id="nombre" name="nombre" />
+        <span id="errorNombre" class="error"> falta el nombre </span>
+      </p>
+
+      <p>
+        <label for="apellido">apellido</label>
+        <input type="text" id="apellido" name="apellido" />
+        <span id="errorApellido" class="error"> falta el apellido </span>
+      </p>
+      <p>
+        <input type="submit" value="enviar" />
+      </p>
+    </form>
+  </body>
+</html>
